@@ -88,6 +88,8 @@ Scan for foreign loanwords (English, French, or unnecessary Arabic borrowings) a
   - **Brand and product names:** Stripe, Google, Figma, Redis, Next.js, GitHub.
   - **Code identifiers, paths, URLs, and commands:** `src/components/`, `npm run build`, `user_id`, `apiKey`.
   - **Proper nouns, quoted text, scientific formulas, units of measurement.**
+- **Banish Literal Translation Traps (پرهیز از خطاهای فاحش ترجمه تحت‌اللفظی):**
+  - Never translate software concepts literally into unrelated physical domains (e.g., in software/AI, `pipeline` ➔ `فرایند`, `زنجیره پردازش`, `چرخه`, NEVER «خط لوله»! `thread` in OS ➔ `ترد/رشته`, NEVER «نخ»!).
 - **If a Persian translation would cause confusion in context, retain the recognized term or loanword.**
 
 ---
