@@ -12,12 +12,12 @@ The **Persian Translation Polisher** is an automated post-translation quality pi
 
 ## Upstream Foundations & Acknowledgments
 
-This skill synthesizes and enforces the principles of leading open-source Persian language and engineering projects:
+This skill synthesizes and enforces the principles of leading open-source Persian language and engineering projects, directly adopting their official definitions and naming:
 
-1. **[Salsi](https://github.com/pooooooriya/salsi)** by Pooriya: Systematic replacement of unnecessary foreign borrowings with established, widely understood Persian words, governed by the rule *"Clarity over purity"*.
-2. **[Lahne Man](https://github.com/RezaEsmailGol/lahne-man)** by Reza EsmailGol: Eradication of stereotypical AI cadences, hollow hype adjectives, forced triads, and robotic filler phrasing, plus non-destructive diagnostic check mode.
-3. **[Persian Writing](https://github.com/ali2000hos/persian-writing)** by Ali Hosseini: Precision standards for Persian typography, Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله), Persian digits, standard Persian characters (`ی` and `ک`), and eliminating bureaucratic cliches like «می‌باشد».
-4. **[Awesome Persian AI Rules](https://github.com/amir-hdri/awesome-persian-ai-rules)** by Amir Heydari: Universal standards for BiDi (Bidirectional) text engineering, punctuation flipping prevention via invisible Unicode markers (`RLM`/`LRM`), and CSS/HTML logical properties in RTL layouts.
+1. **[Salsi (سالسی)](https://github.com/pooooooriya/salsi)** by Pooriya ([@pooooooriya](https://github.com/pooooooriya)): Loanword scanner and stylistic enhancer for written Persian prose based on the Pasban dictionary (over 20,071 words), featuring smart protection layers for technical terms and code, governed by the core principle *"Clarity over purity"* (وضوح بر خلوص زبانی اولویت دارد).
+2. **[Lahne-Man (لحن من)](https://github.com/RezaEsmailGol/lahne-man)** by Reza EsmailGol ([@RezaEsmailGol](https://github.com/RezaEsmailGol)): Preserves the author's authentic voice and textual identity (humor, hesitation, directness, colloquialisms, technical terms) with minimal effective edits; eliminates robotic cadences, low-information empty openers («در دنیای پرشتاب امروز...», «حقیقت این است که...»), artificial triads, and inflated hype, without fabricating fresh facts, statistics, or sources; includes a non-destructive check mode.
+3. **[persian-writing (نگارش فارسی حرفه‌ای برای هوش مصنوعی)](https://github.com/ali2000hos/persian-writing)** by Ali Hosseini ([@ali2000hos](https://github.com/ali2000hos)): Professional Persian (Farsi) writing and RTL documents skill for AI agents. Fixes stiff bookish machine prose, RTL layout failures, standard Persian characters (`ی/ک` instead of `ي/ك`), Persian digits, proper Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله), Persian quotation marks (« »), He-Kasreh errors, and eradicates pseudo-administrative verbs like «می‌باشد».
+4. **[Awesome Persian AI Rules & BiDi Standards](https://github.com/amir-hdri/awesome-persian-ai-rules)** by Amir Heydari ([@amir-hdri](https://github.com/amir-hdri)): Universal standards, typography, RTL layouts, and definitive BiDi bug resolution for all AI coding assistants and agents; eliminates character/punctuation flipping with invisible Unicode directional marks (`RLM`/`LRM`) and CSS logical properties (Start/End).
 
 ---
 
@@ -210,7 +210,7 @@ Enforce rigorous Persian typography, BiDi stability, and editorial hygiene accor
 > برای به‌روزرسانی حساب کاربری خود، روی «ویرایش» بزنید. رمز عبور شما امنیت بالایی دارد و خودکار ذخیره می‌شود.
 
 **Key Changes:**
-- `آپدیت نمودن` ➔ `به‌روزرسانی` (سلسی + حذف فعل اداری)
+- `آپدیت نمودن` ➔ `به‌روزرسانی` (سالسی + حذف فعل اداری)
 - `کلیک نمایید` ➔ `بزنید` (مناسب رابط کاربری فارسی)
 - `لازم به ذکر است که` ➔ حذف مقدمه غیرلازم (لحن من)
 - `میباشد` ➔ `دارد` (دستور خط و ساده‌نویسی)

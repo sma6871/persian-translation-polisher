@@ -11,17 +11,22 @@ A modular, agent-ready AI skill that runs an automated quality and refinement pi
 
 ## 🌟 Upstream Credits & Foundations
 
-This skill incorporates the rules, dictionaries, and research of four essential open-source Persian projects:
+This skill incorporates the rules, dictionaries, and research of four essential open-source Persian projects using their official repository naming and descriptions:
 
-1. **[Salsi (صلصی)](https://github.com/pooooooriya/salsi)** by Pooriya ([@pooooooriya](https://github.com/pooooooriya))
-   - Principles for replacing unnecessary foreign loanwords with established, natural Persian words.
-   - Core philosophy: *Clarity over purity* (وضوح بر خلوص زبانی اولویت دارد).
-2. **[Lahne Man (لحن من)](https://github.com/RezaEsmailGol/lahne-man)** by Reza EsmailGol ([@RezaEsmailGol](https://github.com/RezaEsmailGol))
-   - Eradicating stereotypical AI cadences, hollow hype words, redundant triads, and robotic padding.
-3. **[Persian Writing (دستور خط و نگارش فارسی)](https://github.com/ali2000hos/persian-writing)** by Ali Hosseini ([@ali2000hos](https://github.com/ali2000hos))
-   - Rigorous Persian typography, Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله), Unicode normalization (`ی`/`ک`), and eliminating bureaucratic cliches like «می‌باشد».
-4. **[Awesome Persian AI Rules](https://github.com/amir-hdri/awesome-persian-ai-rules)** by Amir Heydari ([@amir-hdri](https://github.com/amir-hdri))
-   - Universal standards for BiDi (Bidirectional) text stability, invisible punctuation markers (`RLM`/`LRM`), and RTL UI layout engineering.
+1. **[Salsi (سالسی)](https://github.com/pooooooriya/salsi)** by Pooriya ([@pooooooriya](https://github.com/pooooooriya)):
+   - Loanword scanner and stylistic enhancer for Persian prose based on the Pasban dictionary (over 20,071 words).
+   - Features intelligent protection layers that preserve technical terms, code, proper nouns, URLs, and quotations.
+   - Governed by the fundamental principle: *Clarity over purity* (وضوح بر خلوص زبانی اولویت دارد).
+2. **[Lahne-Man (لحن من)](https://github.com/RezaEsmailGol/lahne-man)** by Reza EsmailGol ([@RezaEsmailGol](https://github.com/RezaEsmailGol)):
+   - Preserves the writer's authentic voice and textual identity (humor, hesitation, directness, colloquialisms, technical terms) with minimal effective edits.
+   - Eliminates robotic cadences, low-information empty openers («در دنیای پرشتاب امروز...», «حقیقت این است که...»), artificial triads, and inflated hype, without fabricating fresh facts, statistics, or sources.
+   - Includes a non-destructive check mode ("فقط بررسی، بدون بازنویسی").
+3. **[persian-writing (نگارش فارسی حرفه‌ای برای هوش مصنوعی)](https://github.com/ali2000hos/persian-writing)** by Ali Hosseini ([@ali2000hos](https://github.com/ali2000hos)):
+   - Professional Persian writing and RTL document engineering skill for AI agents.
+   - Treats stiff bookish machine prose, RTL layout failures, standard Persian characters (`ی/ک` instead of `ي/ك`), Persian digits, proper Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله), Persian quotation marks (« »), He-Kasreh errors, and eradicates pseudo-administrative verbs like «می‌باشد».
+4. **[Awesome Persian AI Rules & BiDi Standards](https://github.com/amir-hdri/awesome-persian-ai-rules)** by Amir Heydari ([@amir-hdri](https://github.com/amir-hdri)):
+   - Universal standards, typography, RTL layouts, and definitive BiDi bug resolution for all AI coding assistants and agents.
+   - Eliminates character/punctuation flipping with invisible Unicode directional marks (`RLM`/`LRM`) and CSS logical properties (Start/End).
 
 ---
 
@@ -110,7 +115,7 @@ persian-translation-polisher/
 > شما می‌توانید گزینه‌های مورد نظر خود را با زدن روی «ذخیره» ثبت کنید. این ابزار به مدیریت آسان‌تر کارهایتان کمک می‌کند و رمز عبور شما نیز خودکار تنظیم می‌شود.
 
 ### Changelog Generated
-- **اصلاح اصطلاحات (سلسی):** جایگزینی «آیتم‌ها» با «گزینه‌ها»، «سیو» با «ذخیره»، «پروسه» با «کارها»، «اتوماتیک» با «خودکار»، و «کانفیگ می‌گردد» با «تنظیم می‌شود».
+- **اصلاح اصطلاحات (سالسی):** جایگزینی «آیتم‌ها» با «گزینه‌ها»، «سیو» با «ذخیره»، «پروسه» با «کارها»، «اتوماتیک» با «خودکار»، و «کانفیگ می‌گردد» با «تنظیم می‌شود».
 - **حذف ردپای هوش مصنوعی (لحن من):** حذف مقدمه کلیشه‌ای «در دنیای پرشتاب امروز»، عبارت زاید «لازم به ذکر است که»، و صفت‌های اغراق‌آمیز «انقلابی و شگفت‌انگیز».
 - **ساده‌نویسی و دستور خط (persian-writing):** حذف فعل‌های اداری «می‌باشد» و «نمایید»، اصلاح نیم‌فاصله در «کارهایتان»، و استفاده از گیومه فارسی («ذخیره»).
 - **اصلاح ساختار فعل:** تبدیل جملات مجهول و سنگین به جملات معلوم، فشرده و طبیعی.

@@ -12,9 +12,10 @@ Whenever you generate, translate, review, or polish Persian (Farsi) text, you MU
 - Translate ideas idiomatically, placing verbs naturally at the end and avoiding word-for-word English structures.
 
 ### 2. Salsi-Style Loanword Handling (Reference: github.com/pooooooriya/salsi)
-- Replace unnecessary everyday foreign words with standard Persian terms (e.g., آیتم ➔ مورد/گزینه, کنسل ➔ لغو, آپدیت ➔ به‌روزرسانی, اتوماتیک ➔ خودکار, کانفیگ ➔ پیکربندی/تنظیمات, سیو ➔ ذخیره, شیر ➔ هم‌رسانی, یوزر ➔ کاربر, پسورد ➔ گذرواژه, ارور ➔ خطا, پروسه ➔ فرایند).
-- Rule: "Clarity over purity". If a Persian equivalent causes ambiguity, keep the recognized term.
+- Replace unnecessary everyday foreign words with standard Persian terms based on Salsi / Pasban dictionary (e.g., آیتم ➔ مورد/گزینه, کنسل ➔ لغو, آپدیت ➔ به‌روزرسانی, اتوماتیک ➔ خودکار, کانفیگ ➔ پیکربندی/تنظیمات, سیو ➔ ذخیره, شیر ➔ هم‌رسانی, یوزر ➔ کاربر, پسورد ➔ گذرواژه, ارور ➔ خطا, پروسه ➔ فرایند).
+- Rule: "Clarity over purity" (وضوح بر خلوص زبانی اولویت دارد). If a Persian equivalent causes ambiguity, keep the recognized term.
 - NEVER translate technical terms of art (API, SDK, token, compiler, protocol, git, cache, thread, query), product/brand names, code, URLs, or proper nouns.
+- Avoid literal translation traps in tech: never translate `pipeline` as «خط لوله» (use «فرایند / زنجیره پالایش»), or `thread` in OS as «نخ» (use «ترد / رشته»).
 
 ### 3. Lahne Man–Style De-Machining (Reference: github.com/RezaEsmailGol/lahne-man)
 - Strip empty AI intros (e.g., «در دنیای پرشتاب امروز...», «امروزه در عصر تکنولوژی...», «بدون شک...»).
