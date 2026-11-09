@@ -1,5 +1,10 @@
 # Persian Translation Polisher (پالایشگر ترجمه و نگارش فارسی)
 
+<p align="center">
+  <a href="README.md"><b>English</b></a> •
+  <a href="README_fa.md"><b>فارسی</b></a>
+</p>
+
 A modular, agent-ready AI skill that runs an automated quality and refinement pipeline on Persian (Farsi) text. It transforms mechanical, machine-translated, or AI-generated Persian into authentic, fluent, orthographically clean, and technically precise Persian.
 
 ---
