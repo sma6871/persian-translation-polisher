@@ -1,43 +1,43 @@
-# Persian Translation Polisher (پالایشگر ترجمه و نگارش فارسی)
+# پالایشگر ترجمه و نگارش فارسی (Persian Translation Polisher)
 
 <p align="center">
-  <a href="README.md"><b>English</b></a> •
-  <a href="README_fa.md"><b>فارسی</b></a>
+  <a href="README.md"><b>فارسی</b></a> •
+  <a href="README_en.md"><b>English</b></a>
 </p>
 
-A modular, agent-ready AI skill that runs an automated quality and refinement pipeline on Persian (Farsi) text. It transforms mechanical, machine-translated, or AI-generated Persian into authentic, fluent, orthographically clean, and technically precise Persian.
+یک مهارت (Skill) ماژولار و آماده برای عامل‌های هوش مصنوعی (AI Agents)، کِرسِر (Cursor) و کلود کد (Claude Code) که خط لولهٔ ۵ مرحله‌ای کنترل کیفیت را روی متون فارسی اعمال می‌کند. این ابزار ترجمه‌های ماشینی، مکانیکی یا خروجی‌های هوش مصنوعی را به فارسی طبیعی، شیوا، پیراسته از تکلف و از نظر فنی و رسم‌الخطی دقیق تبدیل می‌کند.
 
 ---
 
-## 🌟 Upstream Credits & Foundations
+## 🌟 پروژه‌ها و بنیادهای مرجع
 
-This skill incorporates the rules, dictionaries, and research of four essential open-source Persian projects:
+این مهارت از پژوهش‌ها، الگوها و واژه‌نامه‌های چهار پروژهٔ متن‌باز زبان فارسی بهره می‌برد:
 
-1. **[Salsi (صلصی)](https://github.com/pooooooriya/salsi)** by Pooriya ([@pooooooriya](https://github.com/pooooooriya))
-   - Principles for replacing unnecessary foreign loanwords with established, natural Persian words.
-   - Core philosophy: *Clarity over purity* (وضوح بر خلوص زبانی اولویت دارد).
-2. **[Lahne Man (لحن من)](https://github.com/RezaEsmailGol/lahne-man)** by Reza EsmailGol ([@RezaEsmailGol](https://github.com/RezaEsmailGol))
-   - Eradicating stereotypical AI cadences, hollow hype words, redundant triads, and robotic padding.
-3. **[Persian Writing (دستور خط و نگارش فارسی)](https://github.com/ali2000hos/persian-writing)** by Ali Hosseini ([@ali2000hos](https://github.com/ali2000hos))
-   - Rigorous Persian typography, Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله), Unicode normalization (`ی`/`ک`), and eliminating bureaucratic cliches like «می‌باشد».
-4. **[Awesome Persian AI Rules](https://github.com/amir-hdri/awesome-persian-ai-rules)** by Amir Heydari ([@amir-hdri](https://github.com/amir-hdri))
-   - Universal standards for BiDi (Bidirectional) text stability, invisible punctuation markers (`RLM`/`LRM`), and RTL UI layout engineering.
+1. **[صلصی (Salsi)](https://github.com/pooooooriya/salsi)** اثر پوریا ([@pooooooriya](https://github.com/pooooooriya)):
+   - اصول پالایش وام‌واژه‌های زائد فرنگی و جایگزینی با برابرهای جاافتاده و روشن فارسی.
+   - اصل بنیادین: *«وضوح بر خلوص زبانی اولویت دارد»*.
+2. **[لحن من (Lahne Man)](https://github.com/RezaEsmailGol/lahne-man)** اثر رضا اسماعیل‌گل ([@RezaEsmailGol](https://github.com/RezaEsmailGol)):
+   - ریشه‌کنی ریتم‌های رباتیک، مقدمه‌های پوچ («در دنیای پرشتاب امروز...»)، سه‌گانه‌سازی‌های تصنعی و اغراق‌های بادکنکی هوش مصنوعی.
+3. **[دستور خط و نگارش فارسی (Persian Writing)](https://github.com/ali2000hos/persian-writing)** اثر علی حسینی ([@ali2000hos](https://github.com/ali2000hos)):
+   - استانداردهای تایپوگرافی، نیم‌فاصله (ZWNJ)، یکپارچه‌سازی نویسه‌های یونی‌کد (`ی`/`ک` فارسی) و حذف فعل‌های اداری جعلی مانند «می‌باشد».
+4. **[Awesome Persian AI Rules](https://github.com/amir-hdri/awesome-persian-ai-rules)** اثر امیر حیدری ([@amir-hdri](https://github.com/amir-hdri)):
+   - استانداردهای پایداری متون دوجهته (BiDi)، جلوگیری از پرش علائم نگارشی با نشانه‌های نامرئی (`RLM`/`LRM`) و ویژگی‌های منطقی CSS در رابط‌های کاربری راست‌به‌چپ (RTL).
 
 ---
 
-## 🚀 Installation & Integration
+## 🚀 راهنمای نصب و راه‌اندازی
 
-### 1. Claude Code
-To make this skill available across your Claude Code workflows:
-- **Project-level:** Place the folder into your project under `.agents/skills/persian-translation-polisher/` or `.claude/skills/persian-translation-polisher/`.
-- **Global-level:** Copy this folder to `~/.claude/skills/persian-translation-polisher/`.
-- Claude Code will automatically discover `SKILL.md` when you ask to translate, polish, or generate Persian content.
+### ۱. کلود کد (Claude Code)
+برای استفاده از این مهارت در محیط Claude Code:
+- **در سطح پروژه:** این پوشه را در مسیر `.agents/skills/persian-translation-polisher/` یا `.claude/skills/persian-translation-polisher/` قرار دهید.
+- **در سطح سراسری (Global):** این پوشه را در مسیر `~/.claude/skills/persian-translation-polisher/` کپی کنید.
+- کلود کد به‌طور خودکار با درخواست‌های ترجمه یا بازبینی فارسی، فایل `SKILL.md` را شناسایی و فعال می‌کند.
 
-### 2. Cursor IDE
-You can use this skill in Cursor via either `.cursorrules` or Cursor MDC Rules:
+### ۲. محیط توسعه کرسر (Cursor IDE)
+می‌توانید از طریق قوانین MDC یا `.cursorrules` از این مهارت استفاده کنید:
 
-#### Option A: Cursor MDC Rule (Recommended for Cursor 0.40+)
-Create `.cursor/rules/persian-polisher.mdc`:
+#### روش نخست: فایل قانون MDC (پیشنهادی برای Cursor 0.40 به بالا)
+فایل `.cursor/rules/persian-polisher.mdc` را با محتوای زیر بسازید:
 ```markdown
 ---
 description: Automatically polish and humanize Persian translations and text
@@ -45,77 +45,86 @@ globs: **/*.{md,mdx,json,po,ts,tsx,html}
 alwaysApply: false
 ---
 
-# Include instructions from PROMPT.md
+# محتوای پرونده PROMPT.md را اینجا قرار دهید
 ```
-*(Copy the prompt block from [`PROMPT.md`](./PROMPT.md) into this file).*
+*(متن داخل بلوک کد در فایل [`PROMPT.md`](./PROMPT.md) را در این فایل کپی کنید).*
 
-#### Option B: Global / Workspace `.cursorrules`
-Append the contents of [`PROMPT.md`](./PROMPT.md) directly to your project's `.cursorrules`.
+#### روش دوم: فایل سراسری `.cursorrules`
+متن [`PROMPT.md`](./PROMPT.md) را مستقیماً به انتهای پروندهٔ `.cursorrules` پروژهٔ خود اضافه کنید.
 
-### 3. Google Antigravity / OpenMontage
-- This skill is located in `.agents/skills/persian-translation-polisher/`.
-- The agent automatically loads `SKILL.md` whenever Persian translation, localization, or copy review is requested.
+### ۳. گوگل آنتی‌گرویتی (Google Antigravity / OpenMontage)
+- این مهارت در مسیر `.agents/skills/persian-translation-polisher/` مستقر است.
+- ایجنت به‌طور خودکار هنگام هرگونه درخواست ترجمه، بومی‌سازی یا ویرایش متن فارسی آن را فراخوانی می‌کند.
 
-### 4. Windsurf / Roo Code / Cline
-- For Windsurf: Add the contents of [`PROMPT.md`](./PROMPT.md) to your `.windsurfrules`.
-- For Roo Code / Cline: Add as a Custom Instruction in the extension settings or in `.clinerules`.
+### ۴. ویندسرف، رو کد و کلاین (Windsurf / Roo Code / Cline)
+- در **Windsurf:** محتوای [`PROMPT.md`](./PROMPT.md) را به `.windsurfrules` اضافه کنید.
+- در **Roo Code / Cline:** آن را در بخش Custom Instructions یا داخل `.clinerules` قرار دهید.
 
-### 5. ChatGPT (Custom Instructions / GPTs) & Claude Projects
-- Copy the text inside the code fence in [`PROMPT.md`](./PROMPT.md) and paste it into:
-  - **ChatGPT:** "How would you like ChatGPT to respond?"
-  - **Claude:** "Project Instructions" or System Prompt.
+### ۵. وب‌سایت‌های ChatGPT و Claude
+- بلوک متنی داخل [`PROMPT.md`](./PROMPT.md) را کپی کنید و در:
+  - **ChatGPT:** بخش Custom Instructions
+  - **Claude:** بخش Project Instructions یا System Prompt
+  جای‌گذاری نمایید.
 
 ---
 
-## ⚙️ The 5-Stage Pipeline
+## ⚙️ خط لولهٔ ۵ مرحله‌ای پالایش
 
-When triggered, the assistant applies these stages sequentially:
+این فرایند هنگام فعال‌سازی، گام‌به‌گام و بدون پرش اجرا می‌شود:
 
-| Stage | Name | Key Actions | Upstream Influence |
+| مرحله | نام گام | اقدامات کلیدی | مرجع الهام |
 | :---: | :--- | :--- | :--- |
-| **1** | **Base Translation & Register** | Select target register (UI Microcopy, Marketing, Technical Docs, Colloquial, SEO), avoid word-for-word translation, place verbs naturally. | — |
-| **2** | **Salsi Loanword Handling** | Replace everyday foreign borrowings (آیتم ➔ مورد, آپدیت ➔ به‌روزرسانی, کنسل ➔ لغو). Retain technical terms of art (`API`, `Token`, `Git`). | [Salsi](https://github.com/pooooooriya/salsi) |
-| **3** | **Lahne-Man De-Machining** | Eradicate AI openers («در دنیای پرشتاب امروز»), break artificial triads, cut hollow hype (انقلابی, شگفت‌انگیز), eliminate passive voice. | [Lahne Man](https://github.com/RezaEsmailGol/lahne-man) |
-| **4** | **Orthography, BiDi & i18n** | Enforce Persian `ی`/`ک`, strict ZWNJ (نیم‌فاصله), fix He-Kasreh, BiDi punctuation order (`RLM`/`LRM`), Persian pluralization (`۵ کاربر`), banish «می‌باشد». | [persian-writing](https://github.com/ali2000hos/persian-writing), [awesome-persian-ai-rules](https://github.com/amir-hdri/awesome-persian-ai-rules) |
-| **5** | **Final Pass & Output** | Verify consistency, preserve code/markdown/links, output polished text + 3-8 bullet point changelog (or diagnostic report in check mode). | [Lahne Man](https://github.com/RezaEsmailGol/lahne-man) |
+| **۱** | **ترجمه پایه و سبک** | گزینش سبک هدف (رابط کاربری، تبلیغاتی، مستندات فنی، محاوره‌ای، سئو)، پرهیز از ترجمه کلمه‌به‌کلمه و قرار دادن طبیعی افعال در پایان جمله. | — |
+| **۲** | **وام‌واژه‌زدایی سلسی** | جایگزینی کلمات فرنگی غیرضروری (آیتم ➔ مورد، آپدیت ➔ به‌روزرسانی، کنسل ➔ لغو). حفظ اصطلاحات فنی پایه‌ای (`API`, `Token`, `Git`). | [صلصی](https://github.com/pooooooriya/salsi) |
+| **۳** | **انسان‌سازی لحن من** | حذف مقدمه‌های پوچ («در دنیای پرشتاب امروز...»)، شکستن سه‌گانه‌سازی‌ها، حذف واژگان اغراق‌آمیز («انقلابی»، «شگفت‌انگیز») و جایگزینی مجهول‌های سنگین با افعال معلوم. | [لحن من](https://github.com/RezaEsmailGol/lahne-man) |
+| **۴** | **رسم‌الخط، BiDi و بین‌المللی‌سازی** | اصلاح «ی» و «ک» فارسی، رعایت دقیق نیم‌فاصله، رفع هکسره، تثبیت علائم نگارشی دوجهته با `RLM`/`LRM`، رعایت قاعده شمارش فارسی («۵ کاربر» نه «۵ کاربران») و حذف «می‌باشد». | [persian-writing](https://github.com/ali2000hos/persian-writing)، [awesome-persian-ai-rules](https://github.com/amir-hdri/awesome-persian-ai-rules) |
+| **۵** | **بازبینی نهایی و گزارش** | اطمینان از یکدستی اصطلاحات، حفظ کدها و پیوندها، ارائه متن پیراسته به‌همراه سیاههٔ ۳ تا ۸ موردی از تغییرات کلیدی (یا گزارش تشخیصی). | [لحن من](https://github.com/RezaEsmailGol/lahne-man) |
 
 ---
 
-## 📂 Package Contents
+## 📂 ساختار بسته
 
-```
-.agents/skills/persian-translation-polisher/
-├── SKILL.md                          # Full agent skill specification with triggers & pipeline
-├── PROMPT.md                         # Portable system prompt adapter for any LLM
-├── README.md                         # Installation guides, documentation & credits
+```text
+persian-translation-polisher/
+├── SKILL.md                          # سند مشخصات کامل مهارت برای ایجنت‌ها
+├── PROMPT.md                         # آداپتور پرامپت سیستمی برای تمامی مدل‌ها
+├── README.md                         # راهنمای فارسی پروژه (پیش‌فرض)
+├── README_en.md                      # راهنمای انگلیسی پروژه
+├── LICENSE                           # مجوز متن‌باز MIT
 └── references/
-    ├── loanword-dictionary.md        # Curated Salsi dictionary of common loanwords & protected terms
-    ├── lahne-man-patterns.md         # Anti-machine patterns & AI cliché removal guidelines
-    ├── orthography-cheat-sheet.md    # ZWNJ rules, Unicode normalization, punctuation & anti-bureaucracy
-    ├── bidi-rtl-engineering.md       # BiDi text stability, LRM/RLM markers & RTL web UI rules
-    ├── register-modes.md             # Microcopy, Conversational, SEO & Technical register guides
-    └── i18n-pluralization.md         # Persian counting rules, i18n variables & Conventional Commits
+    ├── loanword-dictionary.md        # فرهنگ کاربردی وام‌واژه‌های سلسی و واژگان محافظت‌شده
+    ├── lahne-man-patterns.md         # الگوهای ضدماشینی و راهنمای حذف کلیشه‌های هوش مصنوعی
+    ├── orthography-cheat-sheet.md    # قواعد نیم‌فاصله، یونی‌کد، علائم نگارشی و ساده‌نویسی اداری
+    ├── bidi-rtl-engineering.md       # پایداری متون دوزبانه، نشانه‌های LRM/RLM و استانداردهای وب
+    ├── register-modes.md             # راهنمای سبک‌های کاربری، محاوره‌ای، سئو و فنی
+    └── i18n-pluralization.md         # قواعد شمارش، متغیرهای رشته‌ای و کامیت‌های استاندارد گیت
 ```
 
 ---
 
-## 🧪 Example Before & After
+## 🧪 نمونهٔ دگرگونی متن (پیش و پس از پالایش)
 
-### Input (Typical Raw AI Translation)
+### متن ورودی (ترجمهٔ خام و ماشینی):
 > در دنیای پرشتاب امروز، لازم به ذکر است که شما می‌توانید آیتم‌های مختلف را با کلیک بر روی دکمه سیو ذخیره نمایید. این ابزار انقلابی، سریع، امن و شگفت‌انگیز دارای کاربرد زیادی در پروسه کاری شما می‌باشد و پسورد شما به صورت اتوماتیک کانفیگ می‌گردد.
 
-### Output (Polished via Skill Pipeline)
+### متن خروجی (پس از اجرای خط لوله):
 > شما می‌توانید گزینه‌های مورد نظر خود را با زدن روی «ذخیره» ثبت کنید. این ابزار به مدیریت آسان‌تر کارهایتان کمک می‌کند و رمز عبور شما نیز خودکار تنظیم می‌شود.
 
-### Changelog Generated
-- **اصلاح اصطلاحات (سلسی):** جایگزینی «آیتم‌ها» با «گزینه‌ها»، «سیو» با «ذخیره»، «پروسه» با «کارها»، «اتوماتیک» با «خودکار»، و «کانفیگ می‌گردد» با «تنظیم می‌شود».
-- **حذف ردپای هوش مصنوعی (لحن من):** حذف مقدمه کلیشه‌ای «در دنیای پرشتاب امروز»، عبارت زاید «لازم به ذکر است که»، و صفت‌های اغراق‌آمیز «انقلابی و شگفت‌انگیز».
-- **ساده‌نویسی و دستور خط (persian-writing):** حذف فعل‌های اداری «می‌باشد» و «نمایید»، اصلاح نیم‌فاصله در «کارهایتان»، و استفاده از گیومه فارسی («ذخیره»).
-- **اصلاح ساختار فعل:** تبدیل جملات مجهول و سنگین به جملات معلوم، فشرده و طبیعی.
+### سیاههٔ تغییرات (Changelog نمونه):
+- **اصلاح اصطلاحات (سلسی):** جایگزینی «آیتم‌ها» با «گزینه‌ها»، «سیو» با «ذخیره»، «پروسه» با «کارها»، «اتوماتیک» با «خودکار» و «کانفیگ می‌گردد» با «تنظیم می‌شود».
+- **حذف ردپای هوش مصنوعی (لحن من):** حذف مقدمه کلیشه‌ای «در دنیای پرشتاب امروز»، عبارت زاید «لازم به ذکر است که» و صفت‌های اغراق‌آمیز «انقلابی و شگفت‌انگیز».
+- **ساده‌نویسی و دستور خط (persian-writing):** حذف فعل‌های اداری «می‌باشد» و «نمایید»، اصلاح نیم‌فاصله در «کارهایتان» و استفاده از گیومه فارسی («ذخیره»).
+- **اصلاح ساختار فعل:** تبدیل جملات مجهول و سنگین به ساختار معلوم، روان و طبیعی.
 
 ---
 
-## 🛡️ Non-Negotiable Constraints
-- **Never break technical assets:** Inline code, code blocks, URLs, markdown links, and HTML anchors remain intact.
-- **Never fabricate information:** Do not invent facts, metrics, or sources not present in the original input.
-- **Minimal surgical edits:** Do not rewrite well-crafted sentences for the sake of rewriting.
+## 🛡️ خطوط قرمز و شروط تخطی‌ناپذیر
+- **حفظ دارایی‌های فنی:** بلوک‌های کد، کدهای درون‌خطی، پیوندها (URLs)، شناسه‌های متغیرها و تگ‌های HTML هرگز نباید تغییر کنند یا بشکنند.
+- **بدون جعل اطلاعات:** هیچ حقیقت، آمار، استناد یا داده‌ای که در متن مبدأ وجود نداشته نباید به متن اضافه شود.
+- **ویرایش جراحی و کمینه:** اگر جمله‌ای از ابتدا روان و درست نوشته شده، نیازی به بازنویسی کامل آن نیست.
+
+---
+
+## 📄 مجوز (License)
+
+این پروژه تحت مجوز آزاد [MIT](LICENSE) منتشر شده است.
